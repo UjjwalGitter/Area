@@ -1,6 +1,8 @@
 package com.ujjwalsingh.categoryapicall;
 
+import com.ujjwalsingh.categoryapicall.Area.AreaList;
 import com.ujjwalsingh.categoryapicall.Category.PostList;
+import com.ujjwalsingh.categoryapicall.City.CityList;
 import com.ujjwalsingh.categoryapicall.Product.ProductList;
 
 import retrofit2.Call;
@@ -31,5 +33,10 @@ public class CatApi {
         @GET("products/")
         Call<ProductList> getProductList();
 
+        @GET("city/")
+        Call<CityList> getCity();
+
+        @GET("area/")
+        Call<AreaList> getArea();
     }
 }
