@@ -51,4 +51,13 @@ public class AreaList {
         this.results = results;
     }
 
+    @Override
+    public String toString() {
+        return "AreaList{" +
+                "count=" + count +
+                ", next='" + next + '\'' +
+                ", previous=" + previous +
+                ", results=" + results +
+                '}';
+    }
 }

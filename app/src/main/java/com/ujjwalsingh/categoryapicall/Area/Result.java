@@ -39,4 +39,12 @@ public class Result {
         this.city = city;
     }
 
+    @Override
+    public String toString() {
+        return "Result{" +
+                "id=" + id +
+                ", area='" + area + '\'' +
+                ", city=" + city +
+                '}';
+    }
 }
